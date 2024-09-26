@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Gift!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .cake {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            margin: 20px 0;
+            background-color: #8B4513; /* Chocolate cake color */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cake-layer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 25px;
+            background-color: #ff6699; /* Cake layer color */
+            border-radius: 5px;
+        }
+        .layer1 { bottom: 25px; }
+        .layer2 { bottom: 50px; }
+        .layer3 { bottom: 75px; }
+        .layer4 { bottom: 100px; }
+
+        .number {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            font-weight: bold;
+            color: #ff4081;
+        }
+
+        .message {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            width: 70%;
+        }
+        .bill-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .contact-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My little Gift!</h1>
+
+    <!-- Autoplaying audio -->
+    <audio autoplay loop style="display:none;">
+        <source src="https://drive.google.com/uc?export=download&id=1t00tYOdeSCLustuGjZtV6jTVGC5QCwpX" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    
+    <script>
+        // Unmute audio once the page has loaded (for autoplay policy handling)
+        window.onload = function() {
+            let audio = document.querySelector("audio");
+            audio.muted = false;
+        };
+    </script>
+    
+    <div class="cake">
+        <div class="cake-layer layer1"></div>
+        <div class="cake-layer layer2"></div>
+        <div class="cake-layer layer3"></div>
+        <div class="cake-layer layer4"></div>
+        <!-- Number 20 -->
+        <div class="number">20</div>
+    </div>
+
+    <div class="message">
+        <h2>Not The Best Gift But Just for You!</h2>
+        <p>Well it was the only thing I could afford apart from this website. Sorry for that but Happy Birthday!!</p>
+    </div>
+    
+    <div class="bill-code">Bill Code: 81 9699 6424 9030 4827 [hope it is working]</div>
+    
+</body>
+</html>
